@@ -32,7 +32,7 @@ const App = () => {
   const handleTaskChange = (id: number, done: boolean) => {
     let newList = [...list]
     for (let i in newList) {
-      if (newList[i].id == id) {
+      if (newList[i].id === id) {
         newList[i].done = done
       }
     }
